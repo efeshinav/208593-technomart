@@ -193,6 +193,47 @@ h2 {
   width: 400px;
 }
 
+/*---------------------------
+Контент на странице каталога
+-----------------------------*/
+.filters {
+  float: left;
+  width: 220px;
+}
+
+.content {
+  float: right;
+  width: 700px;
+}
+
+.items {
+  font-size: 0px;
+}
+
+.item {
+  display: inline-block;
+  vertical-align: top;
+  width: 220px;
+  min-height: 315px;
+  margin: 10px;
+  font-size: 18px;
+}
+
+.item:nth-child(1),
+.item:nth-child(4n) {
+  margin-left: 0px;
+}
+
+.item:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.about-product {
+  padding-top: 70px;
+  padding-bottom: 75px;
+}
+
+
 
 div, nav, section {
   outline: 1px solid black;
