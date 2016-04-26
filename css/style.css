@@ -21,3 +21,179 @@ h2 {
   font-size: 30px;
   line-height: 24px;
 }
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  width: 940px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.shop-description {
+  float: left;
+  width: 260px;
+}
+
+.header-contacts {
+  float: left;
+  width: 270px;
+  margin-left: 50px;
+}
+
+.authorization {
+  float: right;
+  width: 300px;
+}
+
+.header-navigation {
+  float: left;
+  width: 940px;
+}
+
+.promo-block {
+  margin-top: 60px;
+  margin-bottom: 53px;
+}
+
+.promo {
+  width: 300px;
+  height: 123px;
+  margin-bottom: 20px;
+}
+
+.materials {
+  float: left;
+  margin-right: 10px;
+}
+
+.tool {
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.tech {
+  float: left;
+  margin-left: 10px;
+}
+
+.view-port {
+  float: left;
+  width: 620px;
+}
+
+.sale {
+  float: right;
+}
+
+.delivery {
+  float: right;
+}
+
+.item-list,
+.producer-list {
+  font-size: 0px;
+}
+
+.popular-item {
+  display: inline-block;
+  vertical-align: top;
+  width: 220px;
+  min-height: 315px;
+  margin: 10px;
+  font-size: 18px;
+}
+
+.popular-producers-header {
+  margin: 10px 0px;
+}
+
+.popular-producer {
+  display: inline-block;
+  vertical-align: top;
+  width: 220px;
+  height: 143px;
+  margin: 10px;
+  font-size: 18px;
+}
+
+.popular-item:nth-child(1),
+.popular-item:nth-child(5n),
+.popular-producer:nth-child(1),
+.popular-producer:nth-child(5n) {
+  margin-left: 0px;
+}
+
+.popular-item:nth-child(4n),
+.popular-producer:nth-child(4n) {
+  margin-right: 0px;
+}
+
+.services-sections {
+  display: block;
+  float: left;
+  width: 240px;
+}
+
+.service-description {
+  float: left;
+  width: 300px;
+  margin: 0px 10px;
+}
+
+
+.service img {
+  display: block;
+  float: right;
+}
+
+.about {
+  margin-bottom: 85px;
+}
+
+.about-company {
+  float: left;
+  width: 550px;
+}
+
+.about-contacts {
+  float: right;
+  width: 300px;
+}
+
+.copyright {
+  float: left;
+  width: 230px;
+}
+
+.copyright-footer-social {
+  float: left;
+  width: 150px;
+  margin-left: 150px;
+}
+
+.footer-mailto {
+  float: left;
+  min-width: 140px;
+  margin-left: 100px;
+}
+
+.footer-site {
+  float: right;
+  min-width: 115px;
+}
+
+.footer-contacts p {
+  float: left;
+  width: 400px;
+}
+
+
+div, nav, section {
+  outline: 1px solid black;
+}
