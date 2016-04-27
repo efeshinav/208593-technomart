@@ -105,7 +105,8 @@ h2 {
   vertical-align: top;
   width: 220px;
   min-height: 315px;
-  margin: 10px;
+  margin-right: 20px;
+  margin-bottom: 20px;
   font-size: 18px;
 }
 
@@ -118,15 +119,9 @@ h2 {
   vertical-align: top;
   width: 220px;
   height: 143px;
-  margin: 10px;
+  margin-right: 20px;
+  margin-bottom: 20px;
   font-size: 18px;
-}
-
-.popular-item:nth-child(1),
-.popular-item:nth-child(5n),
-.popular-producer:nth-child(1),
-.popular-producer:nth-child(5n) {
-  margin-left: 0px;
 }
 
 .popular-item:nth-child(4n),
@@ -215,13 +210,9 @@ h2 {
   vertical-align: top;
   width: 220px;
   min-height: 315px;
-  margin: 10px;
+  margin-right: 20px;
+  margin-bottom: 20px;
   font-size: 18px;
-}
-
-.item:nth-child(1),
-.item:nth-child(4n) {
-  margin-left: 0px;
 }
 
 .item:nth-child(3n) {
