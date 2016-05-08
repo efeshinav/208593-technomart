@@ -45,79 +45,87 @@
     </header>
     <main class="container">
       <div class="promo-block clearfix">
-        <div class="promo materials">
+        <div class="promo materials new">
           <span>Материалы</span>
           <a href="#">На любой вкус</a>
-          <img src="img/materials.png" width="44" height="65" alt="Материалы">
+          <!-- <img src="img/materials.png" width="44" height="65" alt="Материалы"> -->
         </div>
         <div class="promo tool">
           <span>Инструмент</span>
           <a href="#">На все случаи</a>
-          <img src="img/instruments.png" width="75" height="61" alt="Инструмент">
+          <!-- <img src="img/instruments.png" width="75" height="61" alt="Инструмент"> -->
         </div>
         <div class="promo tech">
           <span>Техника</span>
           <a href="#">Для стройки</a>
-          <img src="img/tech.png" width="78" height="62" alt="Техника">
+          <!-- <img src="img/tech.png" width="78" height="62" alt="Техника"> -->
         </div>
         <div class="view-port">
           <div class="slide">
-            <h2>Перфораторы</h2>
-            <span>Настоящие мужские игрушки</span>
+            <span class="slide-name">Перфораторы</span>
+            <span class="slide-description">Настоящие мужские игрушки</span>
+            <a class="promo-slider-btn button" href="#">Открыть каталог</a>
             <img src="img/slide-1.jpg" width="620" height="266" alt="Перфораторы">
           </div>
           <div class="slide" style="display:none;">
-            <h2>Дрели</h2>
-            <span>Соседям на радость!</span>
+            <span class="slide-name">Дрели</span>
+            <span class="slide-description">Соседям на радость!</span>
             <img src="img/slide-2.jpg" alt="Дрели">
           </div>
-          <a class="promo-slider-btn button" href="#">Открыть каталог</a>
         </div>
         <div class="promo sale">
           <span>Скидки 50%</span>
           <a href="#">На 350 товаров</a>
-          <img src="img/sale.png" width="59" height="72" alt="Скидки 50%">
+          <!-- <img src="img/sale.png" width="59" height="72" alt="Скидки 50%"> -->
         </div>
         <div class="promo delivery">
           <span>Доставка</span>
           <a href="#">Бесплатно</a>
-          <img src="img/delivery.png" width="78" height="63" alt="Доставка">
+          <!-- <img src="img/delivery.png" width="78" height="63" alt="Доставка"> -->
         </div>
       </div>
 
       <section class="popular-goods">
-        <div class="popular-goods-header">
+        <div class="popular-goods-header clearfix">
           <span>Популярные товары:</span>
           <a class="popular-goods-btn button" href="#">Все популярные товары</a>
         </div>
         <div class="item-list">
           <div class="popular-item">
-            <img src="img/item-1.jpg" width="180" height="160" alt="Перфоратор Bosch BFG 9000">
+            <div class="img">
+              <img src="img/item-1.jpg" width="180" height="160" alt="Перфоратор Bosch BFG 9000">
+            </div>
             <span class="popular-item-name">Перфоратор BOSCH BFG 9000</span>
             <span class="old-price">32500 Р.</span>
-            <a class="price-btn button" href="#">25500 Р.</a>
+            <a class="price-btn" href="#">25500 Р.</a>
           </div>
           <div class="popular-item">
-            <img src="img/item-2.jpg" width="127" height="112" alt="Перфоратор Bosch BFG 3000">
+            <div class="img">
+              <img src="img/item-2.jpg" width="127" height="112" alt="Перфоратор Bosch BFG 3000">
+            </div>
             <span class="popular-item-name">Перфоратор BOSCH BFG 3000</span>
             <span class="old-price">22500 Р.</span>
-            <a class="price-btn button" href="#">15500 Р.</a>
+            <a class="price-btn" href="#">15500 Р.</a>
           </div>
           <div class="popular-item">
-            <img src="img/item-3.jpg" width="144" height="128" alt="Перфоратор Bosch BFG 6000">
+            <div class="img">
+              <img src="img/item-3.jpg" width="144" height="128" alt="Перфоратор Bosch BFG 6000">
+            </div>
             <span class="popular-item-name">Перфоратор BOSCH BFG 6000</span>
-            <span class="old-price">30500 </span>
-            <a class="price-btn button" href="#">25500 Р.</a>
+            <span class="old-price">30500 Р.</span>
+            <a class="price-btn" href="#">25500 Р.</a>
           </div>
-          <div class="popular-item">
-            <img src="img/item-2.jpg" width="127" height="112" alt="Перфоратор Bosch BFG 2000">
+          <div class="popular-item new">
+            <div class="img">
+              <img src="img/item-2.jpg" width="127" height="112" alt="Перфоратор Bosch BFG 2000">
+            </div>
             <span class="popular-item-name">Перфоратор BOSCH BFG 2000</span>
-            <a class="price-btn button" href="#">12500 Р.</a>
+            <a class="price-btn" href="#">12500 Р.</a>
           </div>
         </div>
       </section>
       <section class="popular-producers">
-        <div class="popular-producers-header">
+        <div class="popular-producers-header clearfix">
           <span>Популярные производители:</span>
           <a class="popular-producers-btn button" href="#">Все производители</a>
         </div>
@@ -160,7 +168,7 @@
           </p>
         </div>
         <ul class="services-sections">
-          <li>Доставка</li>
+          <li class="active">Доставка</li>
           <li>Гарантия</li>
           <li>Кредит</li>
         </ul>
@@ -172,7 +180,7 @@
               Ведь мы неплохо заработаем, поднимая его на ваш этаж!
             </p>
           </div>
-          <img src="img/service-delivery.jpg" width="468" height="261" alt="Доставка">
+          <!-- <img src="img/service-delivery.png" width="468" height="261" alt="Доставка"> -->
         </div>
         <div class="service guarantee-service" style="display:none">
           <div class="service-description">
@@ -184,7 +192,7 @@
               Дом уж восстановите как-нибудь сами.
             </p>
           </div>
-          <img src="img/service-guarantee.jpg" width="389" height="283" alt="Гарантия">
+          <!-- <img src="img/service-guarantee.png" width="389" height="283" alt="Гарантия"> -->
         </div>
         <div class="service credit-service" style="display:none">
           <div class="service-description">
@@ -194,7 +202,7 @@
             </p>
             <a class="credit-btn button" href="#">Отправить заявку</a>
           </div>
-          <img src="img/service-credit.jpg" width="465" height="285" alt="Кредит">
+          <!-- <img src="img/service-credit.png" width="465" height="285" alt="Кредит"> -->
         </div>
       </div>
     </section>
@@ -216,7 +224,7 @@
             <li>Автотрейдинг</li>
             <li>ЖелДорЭкспедиция</li>
           </ul>
-          <a class="more-btn" href="#">Подробнее о компании</a>
+          <a class="more-btn button" href="#">Подробнее о компании</a>
         </section>
         <section class="about-contacts">
           <h2>Контакты</h2>
@@ -224,7 +232,7 @@
             Вы можете забрать товар сами, заехав в наш офис:
           </p>
           <a class="map" href="#"><img src="img/map-min.jpg" width="300" height="158" alt="Схема проезда"></a>
-          <a class="feedback-btn">Заблудились? Напишите нам!</a>
+          <a class="feedback-btn button">Заблудились? Напишите нам!</a>
         </section>
       </div>
     </div>
