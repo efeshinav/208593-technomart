@@ -61,17 +61,19 @@
           <!-- <img src="img/tech.png" width="78" height="62" alt="Техника"> -->
         </div>
         <div class="view-port">
-          <div class="slide">
+          <div class="slide show-content">
             <span class="slide-name">Перфораторы</span>
             <span class="slide-description">Настоящие мужские игрушки</span>
             <a class="promo-slider-btn button" href="#">Открыть каталог</a>
             <img src="img/slide-1.jpg" width="620" height="266" alt="Перфораторы">
           </div>
-          <div class="slide" style="display:none;">
+          <div class="slide">
             <span class="slide-name">Дрели</span>
             <span class="slide-description">Соседям на радость!</span>
             <img src="img/slide-2.jpg" alt="Дрели">
           </div>
+          <span class="icon-left"></span>
+          <span class="icon-right"></span>
         </div>
         <div class="promo sale">
           <span>Скидки 50%</span>
@@ -95,6 +97,10 @@
             <div class="img">
               <img src="img/item-1.jpg" width="180" height="160" alt="Перфоратор Bosch BFG 9000">
             </div>
+            <div class="item-buy">
+              <span><a class="to-cart icon-basket" href="#">Купить</a>
+              <a class="to-bookmarks" href="#">В закладки</a>
+            </div>
             <span class="popular-item-name">Перфоратор BOSCH BFG 9000</span>
             <span class="old-price">32500 Р.</span>
             <a class="price-btn" href="#">25500 Р.</a>
@@ -102,6 +108,10 @@
           <div class="popular-item">
             <div class="img">
               <img src="img/item-2.jpg" width="127" height="112" alt="Перфоратор Bosch BFG 3000">
+            </div>
+            <div class="item-buy">
+              <a class="to-cart icon-basket" href="#">Купить</a>
+              <a class="to-bookmarks" href="#">В закладки</a>
             </div>
             <span class="popular-item-name">Перфоратор BOSCH BFG 3000</span>
             <span class="old-price">22500 Р.</span>
@@ -111,6 +121,10 @@
             <div class="img">
               <img src="img/item-3.jpg" width="144" height="128" alt="Перфоратор Bosch BFG 6000">
             </div>
+            <div class="item-buy">
+              <a class="to-cart icon-basket" href="#">Купить</a>
+              <a class="to-bookmarks" href="#">В закладки</a>
+            </div>
             <span class="popular-item-name">Перфоратор BOSCH BFG 6000</span>
             <span class="old-price">30500 Р.</span>
             <a class="price-btn" href="#">25500 Р.</a>
@@ -118,6 +132,10 @@
           <div class="popular-item new">
             <div class="img">
               <img src="img/item-2.jpg" width="127" height="112" alt="Перфоратор Bosch BFG 2000">
+            </div>
+            <div class="item-buy">
+              <a class="to-cart icon-basket" href="#">Купить</a>
+              <a class="to-bookmarks" href="#">В закладки</a>
             </div>
             <span class="popular-item-name">Перфоратор BOSCH BFG 2000</span>
             <a class="price-btn" href="#">12500 Р.</a>
@@ -172,7 +190,7 @@
           <li>Гарантия</li>
           <li>Кредит</li>
         </ul>
-        <div class="service delivery-service">
+        <div class="service delivery-service show-content">
           <div class="service-description">
             <h3>Доставка</h3>
             <p>
@@ -182,7 +200,7 @@
           </div>
           <!-- <img src="img/service-delivery.png" width="468" height="261" alt="Доставка"> -->
         </div>
-        <div class="service guarantee-service" style="display:none">
+        <div class="service guarantee-service">
           <div class="service-description">
             <h3>Гарантия</h3>
             <p>
@@ -194,11 +212,12 @@
           </div>
           <!-- <img src="img/service-guarantee.png" width="389" height="283" alt="Гарантия"> -->
         </div>
-        <div class="service credit-service" style="display:none">
+        <div class="service credit-service">
           <div class="service-description">
             <h3>Кредит</h3>
             <p>
-              Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.
+              Залезть в долговую яму стало проще!<br>
+              Кредитные консультанты придут вам на помощь.
             </p>
             <a class="credit-btn button" href="#">Отправить заявку</a>
           </div>
@@ -233,6 +252,26 @@
           </p>
           <a class="map" href="#"><img src="img/map-min.jpg" width="300" height="158" alt="Схема проезда"></a>
           <a class="feedback-btn button" hfer="#">Заблудились? Напишите нам!</a>
+          <div class="popup write-us clearfix">
+            <div class="popup-close"></div>
+            <form action="#">
+              <div class="name">
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста">
+              </div>
+              <div class="e-mail">
+                <label for="e-mail">Ваш e-mail:</label>
+                <input type="text" id="e-mail" name="e-mail" placeholder="Для отправки ответа">
+              </div>
+              <div class="textarea">
+                <label for="text">Текст письма:</label>
+                <textarea id="text" name="text" placeholder="В свободной форме"></textarea>
+              </div>
+              <div class="btn">
+                <input type="submit" class="button" value="Отправить">
+              </div>
+            </form>
+          </div>
         </section>
       </div>
     </div>
@@ -284,5 +323,9 @@
         </div>
       </div>
     </footer>
+    <div class="modal-content-map">
+      <div class="popup-close"></div>
+      <div id="google-map"></div>
+    </div>
   </body>
 </html>
