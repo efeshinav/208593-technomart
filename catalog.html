@@ -121,13 +121,17 @@
         </form>
       </div>
       <div class="content">
-        <div class="sorting">
-          <span>Сортировка</span>
-          <a href="#">По цене</a>
-          <a href="#">По типу</a>
-          <a href="#">По функционалу</a>
-          <a class="sorting-inc" href="#">Inc</a>
-          <a class="sorting-dec" href="#">Dec</a>
+        <div class="sort-by">
+          <div class="sorting">
+            <span>Сортировка:</span>
+            <a href="#" class="price-sort active">По цене</a>
+            <a href="#" class="type-sort">По типу</a>
+            <a href="#" class="func-sort">По функционалу</a>
+          </div>
+          <div class="up-down">
+            <a class="icon-up-dir active" href="#"></a>
+            <a class="icon-down-dir" href="#"></a>
+          </div>
         </div>
         <section class="items">
           <div class="item">
@@ -237,10 +241,10 @@
           </div>
         </section>
         <ul class="paginator">
-          <li>1</li>
+          <li><a class="active-page">1</a></li>
           <li><a href="#">2</a></li>
           <li><a href="#">3</a></li>
-          <li><a href="#">Следующая</a></li>
+          <li><a href="#" class="next-page">Следующая</a></li>
         </ul>
       </div>
     </main>

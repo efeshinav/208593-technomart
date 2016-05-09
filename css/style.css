@@ -1654,7 +1654,62 @@ fieldset label {
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
+}
 
+.sort-by {
+  padding: 9px 0 9px 18px;
+  font-family: 'PTSans', 'Arial', sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: #f7f3ec;
+  border-radius: 4px;
+}
+
+.sorting,
+.up-down {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.up-down {
+  margin-left: 20px;
+}
+
+.sorting a {
+  color: black;
+  opacity: 0.3;
+  text-decoration: none;
+  border-bottom: 1px dotted #ee3643;
+}
+
+.sorting span {
+  margin-right: 130px;
+}
+
+.sorting .active {
+  border: none;
+  color: #ee3643;
+  opacity: 1;
+}
+
+.up-down .active {
+  color: #ee3643;
+}
+
+.price-sort {
+  margin-right: 60px;
+}
+
+.type-sort {
+  margin-right: 50px;
+}
+
+.up-down a {
+  color: #c6c2bd;
+  text-decoration: none;
+  font-size: 23px;
+  line-height: 20px;
 }
 
 .content {
@@ -1680,7 +1735,70 @@ fieldset label {
   margin-right: 0px;
 }
 
+.paginator {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: 'PTSans', 'Arial', sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.paginator li {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.paginator a {
+  display: block;
+  text-align: center;
+  min-width: 38px;
+  text-decoration: none;
+  color: black;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  margin-right: 10px;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+}
+
+.paginator a:hover {
+  border-color: #bdc6ca;
+}
+
+.paginator a:active {
+  border-color: #ee3643;
+}
+
+.paginator .active-page {
+  border: none;
+  background-color: #ee3643;
+  color: white;
+}
+
+.paginator .active-page:hover {
+  border: none;
+}
+
+.paginator .active-page:active {
+  border: none;
+}
+
+.paginator .next-page {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 .about-product {
   padding-top: 70px;
   padding-bottom: 75px;
+  background-color: #f2f6f8;
+  margin-top: 60px;
+}
+
+.product-description p {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  line-height: 24px;
 }
