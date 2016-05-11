@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Техномарт</title>
-    <link href='https://fonts.googleapis.com/css?family=Cuprum:400,400italic,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=PT+Sans:700,400' rel='stylesheet' type='text/css'>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400italic,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:700,400" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -33,7 +34,7 @@
             <ul>
               <li><a href="#">Главная</a></li>
               <li><a href="#">Компания</a></li>
-              <li><a href="#">Каталог</a></li>
+              <li><a href="catalog.html">Каталог</a></li>
               <li><a href="#">Новости</a></li>
               <li><a href="#">Спецпредложения</a></li>
               <li><a href="#">Доставка</a></li>
@@ -60,30 +61,30 @@
           <a href="#">Для стройки</a>
           <!-- <img src="img/tech.png" width="78" height="62" alt="Техника"> -->
         </div>
-        <div class="view-port">
-          <div class="slide show-content">
-            <span class="slide-name">Перфораторы</span>
-            <span class="slide-description">Настоящие мужские игрушки</span>
-            <a class="promo-slider-btn button" href="#">Открыть каталог</a>
-            <img src="img/slide-1.jpg" width="620" height="266" alt="Перфораторы">
+        <div class="slider">
+          <div class="view-port">
+            <div class="slide show-content">
+              <span class="slide-name">Перфораторы</span>
+              <span class="slide-description">Настоящие мужские игрушки</span>
+              <img src="img/slide-1.jpg" width="620" height="266" alt="Перфораторы">
+            </div>
+            <div class="slide">
+              <span class="slide-name">Дрели</span>
+              <span class="slide-description">Соседям на радость!</span>
+              <img src="img/slide-2.jpg" alt="Дрели">
+            </div>
           </div>
-          <div class="slide">
-            <span class="slide-name">Дрели</span>
-            <span class="slide-description">Соседям на радость!</span>
-            <img src="img/slide-2.jpg" alt="Дрели">
-          </div>
+          <a class="promo-slider-btn button" href="#">Открыть каталог</a>
           <span class="icon-left"></span>
           <span class="icon-right"></span>
         </div>
         <div class="promo sale">
           <span>Скидки 50%</span>
           <a href="#">На 350 товаров</a>
-          <!-- <img src="img/sale.png" width="59" height="72" alt="Скидки 50%"> -->
         </div>
         <div class="promo delivery">
           <span>Доставка</span>
           <a href="#">Бесплатно</a>
-          <!-- <img src="img/delivery.png" width="78" height="63" alt="Доставка"> -->
         </div>
       </div>
 
@@ -98,7 +99,7 @@
               <img src="img/item-1.jpg" width="180" height="160" alt="Перфоратор Bosch BFG 9000">
             </div>
             <div class="item-buy">
-              <span><a class="to-cart icon-basket" href="#">Купить</a>
+              <a class="to-cart icon-basket" href="#">Купить</a>
               <a class="to-bookmarks" href="#">В закладки</a>
             </div>
             <span class="item-name">Перфоратор BOSCH BFG 9000</span>
@@ -186,9 +187,9 @@
           </p>
         </div>
         <ul class="services-sections">
-          <li class="active">Доставка</li>
-          <li>Гарантия</li>
-          <li>Кредит</li>
+          <li id="0" class="active">Доставка</li>
+          <li id="1">Гарантия</li>
+          <li id="2">Кредит</li>
         </ul>
         <div class="service delivery-service show-content">
           <div class="service-description">
@@ -198,7 +199,6 @@
               Ведь мы неплохо заработаем, поднимая его на ваш этаж!
             </p>
           </div>
-          <!-- <img src="img/service-delivery.png" width="468" height="261" alt="Доставка"> -->
         </div>
         <div class="service guarantee-service">
           <div class="service-description">
@@ -210,7 +210,6 @@
               Дом уж восстановите как-нибудь сами.
             </p>
           </div>
-          <!-- <img src="img/service-guarantee.png" width="389" height="283" alt="Гарантия"> -->
         </div>
         <div class="service credit-service">
           <div class="service-description">
@@ -221,7 +220,6 @@
             </p>
             <a class="credit-btn button" href="#">Отправить заявку</a>
           </div>
-          <!-- <img src="img/service-credit.png" width="465" height="285" alt="Кредит"> -->
         </div>
       </div>
     </section>
@@ -251,7 +249,7 @@
             Вы можете забрать товар сами, заехав в наш офис:
           </p>
           <a class="map" href="#"><img src="img/map-min.jpg" width="300" height="158" alt="Схема проезда"></a>
-          <a class="feedback-btn button" hfer="#">Заблудились? Напишите нам!</a>
+          <a class="feedback-btn button" href="#">Заблудились? Напишите нам!</a>
           <div class="popup write-us clearfix">
             <div class="popup-close"></div>
             <form action="#" method="post">
@@ -327,5 +325,78 @@
       <div class="popup-close"></div>
       <div id="google-map"></div>
     </div>
+
+    <script>
+      var link = document.querySelector(".feedback-btn");
+      var popup = document.querySelector(".write-us");
+      var close = popup.querySelector(".popup-close");
+
+      var slider = document.querySelector(".slider");
+      var viewPort = slider.querySelector(".view-port");
+      var currentSlide = viewPort.querySelector(".show-content");
+      var nextSlide = slider.querySelector(".icon-right");
+      var prevSlide = slider.querySelector(".icon-left");
+
+      var openMap = document.querySelector(".map");
+      var map = document.querySelector(".modal-content-map");
+      var closeMap = map.querySelector(".popup-close");
+
+      var services = document.querySelectorAll(".service");
+      var activeService = document.querySelector(".services-sections").querySelector(".active");
+
+      document.querySelector('.services-sections').addEventListener("click", function(event) {
+        var id = event.target.id;
+        activeService.classList.remove("active");
+        event.target.classList.add("active");
+        activeService = event.target;
+
+        document.querySelector(".services").querySelector(".show-content").classList.remove("show-content");
+        services[id].classList.add("show-content");
+      });      
+
+      openMap.addEventListener("click", function(event) {
+        event.preventDefault();
+        map.classList.add("show-content");
+      });
+
+      closeMap.addEventListener("click", function(event) {
+        event.preventDefault();
+        map.classList.remove("show-content");
+      })
+
+      nextSlide.addEventListener("click", function(event) {
+        event.preventDefault();
+        currentSlide.classList.remove("show-content");
+        if (currentSlide == viewPort.lastElementChild) {
+          currentSlide = viewPort.firstElementChild;
+        } else {
+          currentSlide = currentSlide.nextElementSibling;
+        }
+        currentSlide.classList.add("show-content");
+      });
+
+      prevSlide.addEventListener("click", function(event) {
+        event.preventDefault();
+        currentSlide.classList.remove("show-content");
+        if (currentSlide == viewPort.firstElementChild) {
+          currentSlide = viewPort.lastElementChild;
+        } else {
+          currentSlide = currentSlide.previousElementSibling;
+        }
+        currentSlide.classList.add("show-content");
+      });
+
+      link.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.add("show-content");
+      });
+
+      close.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.remove("show-content");
+      });
+
+    </script>
+
   </body>
 </html>

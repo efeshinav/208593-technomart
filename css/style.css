@@ -648,7 +648,7 @@ input[type="search"]:focus+span::before {
   background: #cc79d1 url("../img/tech.png") no-repeat 190px 50%;
 }
 
-.view-port {
+.slider {
   float: left;
   width: 620px;
   position: relative;
@@ -1079,10 +1079,6 @@ input[type="search"]:focus+span::before {
   display: none;
 }
 
-.show-content {
-  display: block;
-}
-
 .delivery-service {
   background: url("../img/service-delivery.png") no-repeat right bottom;
 }
@@ -1185,10 +1181,6 @@ input[type="search"]:focus+span::before {
 .popup {
   position: absolute;
   display: none;
-}
-
-.show-popup {
-  display: block;
 }
 
 .popup-close {
@@ -1624,19 +1616,32 @@ fieldset label {
   display: none;
 }
 
-.checkbox-indicator,
-.radio-btn {
+.checkbox-indicator::before,
+.radio-btn::before {
   position: absolute;
+  margin: 0;
   left: 0;
   top: -3px;
+  font-family: 'symbols-technomart';
   font-size: 28px;
   line-height: 20px;
   color: #c1c1c1;
 }
 
-.checkbox-indicator::before,
+.checkbox-indicator::before {
+  content: '\2610';
+}
+
 .radio-btn::before {
-  margin: 0;
+  content: '\25cb';
+}
+
+input[type="checkbox"]:checked+.checkbox-indicator::before {
+  content: '\2611';
+}
+
+input[type="radio"]:checked+.radio-btn::before {
+  content: '\25cf';
 }
 
 .filters input[type="submit"] {
@@ -1718,7 +1723,7 @@ fieldset label {
 }
 
 .items {
-  font-size: 0px;
+  position: relative;
 }
 
 .item {
@@ -1801,4 +1806,55 @@ fieldset label {
   padding: 0;
   font-size: 13px;
   line-height: 24px;
+}
+
+.product-added {
+  display: none;
+  position: absolute;
+  width: 620px;
+  border-top: 7px solid #ee3643;
+  text-align: center;
+  padding-top: 68px;
+  background-color: white;
+  z-index: 10;
+}
+
+.product-added span {
+  font-size: 30px;
+  line-height: 18px;
+}
+
+.product-added a {
+  display: inline-block;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+.buttons {
+  background-color: #f1f1f1;
+  margin-top: 65px;
+  padding-top: 36px;
+  padding-bottom: 36px;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.checkout {
+  width: 220px;
+  margin-right: 20px;
+}
+
+.continue {
+  width: 220px;
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.continue:hover {
+  cursor: pointer;
+}
+
+.show-content {
+  display: block;
 }
