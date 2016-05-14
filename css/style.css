@@ -80,7 +80,7 @@ h2 {
   color: black;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   padding: 0;
 }
 
@@ -305,7 +305,7 @@ input[type="search"]:focus+span::before {
 .shop-description {
   float: left;
   width: 197px;
-  padding-top: 45px;
+  padding-top: 47px;
   padding-left: 53px;
   font-family: 'Cuprum', 'Arial', sans-serif;
   font-style: italic;
@@ -317,18 +317,19 @@ input[type="search"]:focus+span::before {
 .header-contacts {
   float: left;
   width: 270px;
-  margin-left: 50px;
+  margin-left: 70px;
 }
 
 .header-contacts .phone {
   position: relative;
-  width: 263px;
+  /*width: 263px;*/
   margin-top: 45px;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
   font-size: 21px;
   line-height: 39px;
-  font-weight: bold;
-  text-align: center;
+  /*font-weight: bold;*/
+  /*text-align: center;*/
+  padding-left: 72px;
   color: #e9292a;
   border: 3px solid white;
 }
@@ -350,7 +351,7 @@ input[type="search"]:focus+span::before {
   min-width: 270px;
   text-align: center;
   font-size: 14px;
-  font-weight: bold;
+  /*font-weight: bold;*/
   line-height: 24px;
   color: #32425c;
 }
@@ -367,7 +368,7 @@ input[type="search"]:focus+span::before {
 
 .authorized {
   position: relative;
-  margin-bottom: 12px;
+  /*margin-bottom: 12px;*/
 }
 
 .icon-user {
@@ -502,15 +503,16 @@ input[type="search"]:focus+span::before {
   float: left;
   width: 940px;
   background-color: #32425c;
-  margin-top: 36px;
+  margin-top: 39px;
   box-shadow: 0 5px 0 0 #293449;
 }
 
 .header-navigation ul {
   display: block;
-  height: 55px;
+  /*height: 55px;*/
   margin: 0;
   padding: 0;
+  padding-left: 21px;
   font-size: 0;
 }
 
@@ -538,7 +540,7 @@ input[type="search"]:focus+span::before {
 }
 
 .breadcrumbs {
-  margin: 20px 0;
+  margin: 18px 0;
   padding: 0;
   list-style: none;
 }
@@ -547,7 +549,7 @@ input[type="search"]:focus+span::before {
   display: inline-block;
   vertical-align: top;
   position: relative;
-  margin-right: 40px;
+  margin-right: 30px;
 }
 
 .breadcrumbs li::after {
@@ -572,8 +574,8 @@ input[type="search"]:focus+span::before {
 }
 
 .promo-block {
-  margin-top: 60px;
-  margin-bottom: 53px;
+  margin-top: 56px;
+  margin-bottom: 32px;
   position: relative;
 }
 
@@ -735,7 +737,7 @@ input[type="search"]:focus+span::before {
 .promo-slider-btn {
   position: absolute;
   left: 25px;
-  bottom: 22px;
+  bottom: 25px;
   padding-left: 49px;
   padding-right: 45px;
 }
@@ -940,8 +942,8 @@ input[type="search"]:focus+span::before {
 .price-btn {
   display: block;
   position: absolute;
-  bottom: 20px;
-  left: 42px;
+  bottom: 17px;
+  left: 45px;
   width: 100px;
   font-family: 'PTSans', 'Arial', sans-serif;
   font-weight: bold;
@@ -1002,11 +1004,11 @@ input[type="search"]:focus+span::before {
   position: relative;
   background-color: #f2f6f8;
   margin-top: 65px;
-  padding-top: 65px;
+  padding-top: 75px;
 }
 
 .services-header {
-  margin-bottom: 60px;
+  margin-bottom: 67px;
 }
 
 .services-header p {
@@ -1063,7 +1065,7 @@ input[type="search"]:focus+span::before {
 
 .service-description {
   float: left;
-  width: 380px;
+  width: 300px;
   margin-left: 80px;
 }
 
@@ -1101,7 +1103,7 @@ input[type="search"]:focus+span::before {
 
 .about {
   margin-bottom: 85px;
-  padding-top: 80px;
+  padding-top: 85px;
 }
 
 .about p {
@@ -1333,12 +1335,12 @@ label[for="text"] {
   display: inline-block;
   vertical-align: bottom;
   margin-top: 40px;
-  margin-left: 60px;
+  margin-left: 55px;
 }
 
 .copyright-footer {
-  padding-top: 40px;
-  padding-bottom: 35px;
+  padding-top: 37px;
+  padding-bottom: 38px;
   background-color: #293449;
   color: white;
   font-size: 16px;
@@ -1358,7 +1360,7 @@ label[for="text"] {
 .copyright-footer-social {
   float: left;
   width: 150px;
-  margin-left: 150px;
+  margin-left: 160px;
   font-size: 0;
 }
 
@@ -1456,7 +1458,7 @@ label[for="text"] {
 .footer-contacts li {
   display: inline-block;
   vertical-align: top;
-  margin-left: 60px;
+  margin-left: 55px;
 }
 
 .footer-contacts a {
@@ -1607,7 +1609,7 @@ fieldset label {
 
 .label-input {
   position: relative;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   padding-left: 33px;
   cursor: pointer;
 }
@@ -1647,9 +1649,9 @@ input[type="radio"]:checked+.radio-btn::before {
 .filters input[type="submit"] {
   display: block;
   width: 138px;
-  margin-top: 70px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-top: 60px;
+  /*margin-left: auto;
+  margin-right: auto;*/
   padding-top: 9px;
   padding-bottom: 9px;
   border: 1px solid #e5e5e5;
@@ -1662,7 +1664,7 @@ input[type="radio"]:checked+.radio-btn::before {
 }
 
 .sort-by {
-  padding: 9px 0 9px 18px;
+  padding: 7px 0 8px 18px;
   font-family: 'PTSans', 'Arial', sans-serif;
   font-size: 13px;
   line-height: 18px;
@@ -1743,6 +1745,7 @@ input[type="radio"]:checked+.radio-btn::before {
 .paginator {
   padding: 0;
   margin: 0;
+  margin-top: 40px;
   list-style: none;
   font-family: 'PTSans', 'Arial', sans-serif;
   font-size: 13px;
@@ -1759,10 +1762,11 @@ input[type="radio"]:checked+.radio-btn::before {
   text-align: center;
   min-width: 38px;
   text-decoration: none;
+  text-transform: uppercase;
   color: black;
   padding-top: 9px;
   padding-bottom: 9px;
-  margin-right: 10px;
+  margin-right: 5px;
   border: 1px solid #e5e5e5;
   border-radius: 4px;
 }
@@ -1795,8 +1799,8 @@ input[type="radio"]:checked+.radio-btn::before {
 }
 
 .about-product {
-  padding-top: 70px;
-  padding-bottom: 75px;
+  padding-top: 65px;
+  padding-bottom: 70px;
   background-color: #f2f6f8;
   margin-top: 60px;
 }
