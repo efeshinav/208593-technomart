@@ -6,14 +6,14 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="http://fonts.googleapis.com/css?family=Cuprum:400,400italic,700,700italic&subset=cyrillic,latin" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic-ext,latin" rel="stylesheet" type="text/css">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-min.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <div class="header-user-block">
         <div class="container">
           <a class="logo">Техномарт</a>
-          <input type="search" name="search" id="search" value="Поиск:"><span></span>
+          <input type="text" name="search" value="Поиск:"><span></span>
           <a class="bookmarks" href="#">Закладки: 0</a>
           <a class="cart-empty" href="#">Корзина: 0</a>
           <a class="cart-order" href="#">Оформить заказ</a>
@@ -71,7 +71,7 @@
             <div class="slide">
               <span class="slide-name">Дрели</span>
               <span class="slide-description">Соседям на радость!</span>
-              <img src="img/slide-2.jpg" alt="Дрели">
+              <img src="img/slide-2.jpg" width="620" height="266" alt="Дрели">
             </div>
           </div>
           <a class="promo-slider-btn button" href="#">Открыть каталог</a>
@@ -259,7 +259,7 @@
               </div>
               <div class="e-mail">
                 <label for="e-mail">Ваш e-mail:</label>
-                <input type="text" id="e-mail" name="e-mail" placeholder="Для отправки ответа">
+                <input type="text" id="e-mail" name="e-mail" placeholder="Для отправки ответа" required>
               </div>
               <div class="textarea">
                 <label for="text">Текст письма:</label>
@@ -323,80 +323,10 @@
     </footer>
     <div class="modal-content-map">
       <div class="popup-close"></div>
-      <div id="google-map"></div>
+      <div id="google-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.598942412369!2d30.320894615702546!3d59.938796869048396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1463393076769" width="940" height="446" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
     </div>
-
-    <script>
-      var link = document.querySelector(".feedback-btn");
-      var popup = document.querySelector(".write-us");
-      var close = popup.querySelector(".popup-close");
-
-      var slider = document.querySelector(".slider");
-      var viewPort = slider.querySelector(".view-port");
-      var currentSlide = viewPort.querySelector(".show-content");
-      var nextSlide = slider.querySelector(".icon-right");
-      var prevSlide = slider.querySelector(".icon-left");
-
-      var openMap = document.querySelector(".map");
-      var map = document.querySelector(".modal-content-map");
-      var closeMap = map.querySelector(".popup-close");
-
-      var services = document.querySelectorAll(".service");
-      var activeService = document.querySelector(".services-sections").querySelector(".active");
-
-      document.querySelector('.services-sections').addEventListener("click", function(event) {
-        var id = event.target.id;
-        activeService.classList.remove("active");
-        event.target.classList.add("active");
-        activeService = event.target;
-
-        document.querySelector(".services").querySelector(".show-content").classList.remove("show-content");
-        services[id].classList.add("show-content");
-      });
-
-      openMap.addEventListener("click", function(event) {
-        event.preventDefault();
-        map.classList.add("show-content");
-      });
-
-      closeMap.addEventListener("click", function(event) {
-        event.preventDefault();
-        map.classList.remove("show-content");
-      })
-
-      nextSlide.addEventListener("click", function(event) {
-        event.preventDefault();
-        currentSlide.classList.remove("show-content");
-        if (currentSlide == viewPort.lastElementChild) {
-          currentSlide = viewPort.firstElementChild;
-        } else {
-          currentSlide = currentSlide.nextElementSibling;
-        }
-        currentSlide.classList.add("show-content");
-      });
-
-      prevSlide.addEventListener("click", function(event) {
-        event.preventDefault();
-        currentSlide.classList.remove("show-content");
-        if (currentSlide == viewPort.firstElementChild) {
-          currentSlide = viewPort.lastElementChild;
-        } else {
-          currentSlide = currentSlide.previousElementSibling;
-        }
-        currentSlide.classList.add("show-content");
-      });
-
-      link.addEventListener("click", function(event) {
-        event.preventDefault();
-        popup.classList.add("show-content");
-      });
-
-      close.addEventListener("click", function(event) {
-        event.preventDefault();
-        popup.classList.remove("show-content");
-      });
-
-    </script>
-
+    <script src="js/script-min.js"></script>
   </body>
 </html>

@@ -6,14 +6,14 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="http://fonts.googleapis.com/css?family=Cuprum:400,400italic,700,700italic&subset=cyrillic,latin" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic-ext,latin" rel="stylesheet" type="text/css">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-min.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <div class="header-user-block">
         <div class="container clearfix">
           <a class="logo" href="index.html">Техномарт</a>
-          <input type="search" name="search" id="search" value="Поиск:"><span></span>
+          <input type="text" name="search" value="Поиск:"><span></span>
           <a class="bookmarks" href="#">Закладки: 0</a>
           <a class="cart-full" href="#">Корзина: 10</a>
           <a class="cart-order" href="#">Оформить заказ</a>
@@ -319,17 +319,6 @@
           <a href="http://htmlacademy.ru">htmlacademy.ru</a>
         </div>
       </div>
-    </footer>
-    <script>
-
-      var popup = document.querySelector(".product-added");
-      var close = popup.querySelector(".popup-close");
-
-      close.addEventListener("click", function(event) {
-        event.preventDefault();
-        popup.classList.remove("show-content");
-      });
-
-    </script>
+    </footer>    
   </body>
 </html>
